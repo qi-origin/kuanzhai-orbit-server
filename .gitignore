@@ -1,0 +1,11 @@
+/bff/node_modules/
+/agent/node_modules/
+/frontend/.dart_tool/
+/frontend/build/
+/frontend/.flutter-plugins
+/frontend/.flutter-plugins-dependencies
+/bff/.env
+/agent/.env
+/frontend/.packages
+*.lock
+**/node_modules/

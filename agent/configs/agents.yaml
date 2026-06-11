@@ -1,0 +1,50 @@
+agents:
+  # ─── default (alias for liuyao) ──────────────────────────────────
+  - id: default
+    name: Roy
+    model: glm-4-flash-250414
+    provider: zhipu
+    temperature: 0.3
+    maxTokens: 8192
+    skills:
+      - context-enrichment
+      - intent-classification
+    tools:
+      - divination
+    systemPromptId: liuyao-agent
+
+  - id: liuyao
+    name: Roy
+    model: glm-4-flash-250414
+    provider: zhipu
+    temperature: 0.3
+    maxTokens: 8192
+    skills:
+      - context-enrichment
+      - intent-classification
+    tools:
+      - divination
+    systemPromptId: liuyao-agent
+
+  - id: generic
+    name: Generic Assistant
+    model: glm-4-flash-250414
+    provider: zhipu
+    temperature: 0.7
+    maxTokens: 4096
+    skills:
+      - context-enrichment
+      - intent-classification
+    tools: []
+
+  - id: coding
+    name: Coding Assistant
+    model: gpt-4o
+    provider: openai
+    temperature: 0.3
+    maxTokens: 8192
+    skills:
+      - code-analysis
+    tools:
+      - filesystem
+      - search
